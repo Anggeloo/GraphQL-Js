@@ -12,7 +12,7 @@ const typeDefs = gql`
   }
 `;
 
-const products = [{ id: "1", name: "Apple", price: 0.5 }];
+const products = [{ id: "1", name: "Orange", price: 0.5 }];
 
 const resolvers = {
   Query: {
