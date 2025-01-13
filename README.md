@@ -8,7 +8,6 @@ This is a basic example of how to implement a GraphQL architecture in Node.js us
 - Apollo Server](https://www.apollographql.com/docs/apollo-server/) - Library for building GraphQL servers
 - [GraphQL](https://graphql.org/) - Query language for APIs
 
-
 ## 📂 Project structure
 
 ```plaintext
@@ -21,32 +20,30 @@ GraphQL-Js/
 Follow these steps to install and run the project on your local machine:
 
 ## Clone the repository:
-
-````bash
+```bash
 git clone https://github.com/Anggeloo/GraphQL-Js.git
 ```
-Navigate to the project directory:
 
-````bash
+## Navigate to the project directory:
+```bash
 cd GraphQL-Js
 ```
-### Install the dependencies:
 
-````bash
+## Install the dependencies:
+```bash
 npm install
 ```
 
 ### Run the server:
-
-````bash
+```bash
 node GraphQL.js
 ```
-Access the GraphQL interface: Open your browser and go to http://localhost:4000 to interact with the server using the Apollo Server graphical interface.
+Access the GraphQL interface: Open your browser and go to 'http://localhost:4000' to interact with the server using the Apollo Server graphical interface.
 
 ## 📜 GraphQL Schema.
 The server includes the following basic schema:
 
-````bash
+```bash
 type Query {
   hello: String
   getUser(id: ID!): User
@@ -61,22 +58,22 @@ type User {
 
 ### Available queries
 Basic query:
-````bash
+```bash
 query {
   hello
 }
 ```
 ### Expected response:
-
-````bash
+```bash
 {
   “data": {
     “hello": ”Hello, GraphQL!”
   }
 }
 ```
+
 ### Query with parameters:
-````bash
+```bash
 query {
   getUser(id: “1”) {
     id
@@ -85,9 +82,9 @@ query {
   }
 }
 ```
-### Expected response:
 
-````bash
+### Expected response:
+```bash
 {
   “data": {
     “getUser": {
@@ -98,6 +95,7 @@ query {
   }
 }
 ```
+
 ## 🧪 Testing
 You can test the server using the Apollo Server GUI or any GraphQL client such as:
 
